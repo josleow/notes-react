@@ -1,9 +1,32 @@
 import './App.css';
-import {useState} from 'react'
+import {useState, useEffect, useRef} from 'react'
 
 export default function App() {
   const [noteInput, setNoteinput] = useState("")
   const [notes, setNotes] = useState([])
+  const didMountRef = useRef(false);
+
+  // Load notes from localStorage on component mount
+useEffect(() => {
+  try {
+    const saved = localStorage.getItem("notes");
+    if (saved) setNotes(JSON.parse(saved));
+  } catch (e) {
+    setNotes([]);
+  }
+}, []);
+
+
+  
+// Save notes whenever notes state changes
+useEffect(() => {
+    if(!didMountRef.current){
+    didMountRef.current = true;
+    return
+  }
+  localStorage.setItem("notes", JSON.stringify(notes));
+}, [notes]);
+
 
   function addNote(){
     const text = noteInput.trim()
