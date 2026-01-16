@@ -8,3 +8,11 @@
 - Implemented LocalStorage persistence using useEffect
 - Loaded saved notes when app starts
 - Automatically saved notes when state changes
+
+## Day 16
+- Deployed React Notes App to Vercel
+- Verified production build works online
+- Added live demo link for portfolio presentation
+
+### Live Demo
+https://notes-react-vercel.vercel.app/
