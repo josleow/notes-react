@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.empty {
+  margin-top: 14px;
+  color: #666;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.deleteBtn {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ddd;
+}
