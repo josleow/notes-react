@@ -1,3 +1,21 @@
+## 📅 Learning Timeline
+
+| Day | Focus | Outcome |
+|-----|--------|---------|
+| Day 13 | React Setup | Created first React app and ran dev server |
+| Day 14 | React State & Events | Built Notes App with add / delete functionality |
+| Day 15 | React LocalStorage | Added data persistence with useEffect + useRef |
+| Day 16 | Deployment | Deployed live app to Vercel and linked in portfolio |
+
+### 🚀 Live Demo
+https://notes-react-vercel.vercel.app/
+
+## Day 13
+- Created first React app using create-react-app
+- Started local React development server with npm start
+- Edited App.js to render custom content
+- Verified live reload updates in browser
+
 ## Day 14
 - Built working Notes App logic using React state (useState)
 - Added notes via button click and Enter key
@@ -13,6 +31,7 @@
 - Deployed React Notes App to Vercel
 - Generated live production URL
 - Linked live demo and GitHub repo in portfolio site
+
 
 
 ### Live Demo
