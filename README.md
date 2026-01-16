@@ -11,8 +11,9 @@
 
 ## Day 16
 - Deployed React Notes App to Vercel
-- Verified production build works online
-- Added live demo link for portfolio presentation
+- Generated live production URL
+- Linked live demo and GitHub repo in portfolio site
+
 
 ### Live Demo
 https://notes-react-vercel.vercel.app/
