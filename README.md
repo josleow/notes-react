@@ -39,3 +39,8 @@ https://notes-react-vercel.vercel.app/
 - Split Notes list into a reusable component
 - Passed data and functions using React props
 - Improved code structure to match real-world React practices
+
+## Day 18
+- Created NoteItem component for reusable note rendering
+- Practice props by passing data and handlers through components
+- Added notes count and Clear All Functionality

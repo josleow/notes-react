@@ -56,3 +56,14 @@
   cursor: pointer;
   background: #ddd;
 }
+
+.count{color:#666; margin-top: 6px;}
+
+.clearBtn{
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ddd;
+}

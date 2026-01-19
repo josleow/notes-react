@@ -50,18 +50,21 @@ useEffect(() => {
   return (
     <div className="container">
       <header className="header">
-        <h1>Josephine Leow's React Notes</h1>
-        <p>Day 14: Add + Delete Notes</p>
+        <h1>React Notes</h1>
+        <p className="count">Total: {notes.length}</p>
       </header>
       <main className="main">
         <section className="card">  
           <h2>Notes</h2>
           <div className="row"> 
+            {notes.length > 0 && (
+              <button className="clearBtn" onClick={()=>{if(window.confirm("Clear all notes?")) setNotes([])}}>Clear All</button>
+            )}<br/>
             <input className="input" value={noteInput} onChange={(e)=> setNoteinput(e.target.value)} onKeyDown={handleKeyDown} placeholder="Type a note and press Enter"/>
             <button className="button" onClick={addNote}>Add Note</button>
           </div>
 
-   <NotesList notes={notes} deleteNote={deleteNote} />
+         <NotesList notes={notes} deleteNote={deleteNote} />
         </section>
       </main>
     </div>
