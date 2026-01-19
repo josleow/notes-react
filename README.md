@@ -32,7 +32,10 @@ https://notes-react-vercel.vercel.app/
 - Generated live production URL
 - Linked live demo and GitHub repo in portfolio site
 
-
-
 ### Live Demo
 https://notes-react-vercel.vercel.app/
+
+## Day 17
+- Split Notes list into a reusable component
+- Passed data and functions using React props
+- Improved code structure to match real-world React practices

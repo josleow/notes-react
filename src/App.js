@@ -1,5 +1,7 @@
 import './App.css';
 import {useState, useEffect, useRef} from 'react'
+import NotesList from './components/NotesList';
+
 
 export default function App() {
   const [noteInput, setNoteinput] = useState("")
@@ -59,18 +61,7 @@ useEffect(() => {
             <button className="button" onClick={addNote}>Add Note</button>
           </div>
 
-          {notes.length === 0 ? (
-            <p className="empty">No notes yet. Add one above</p>
-          ) : (
-            <ul className="notes-list">
-              {notes.map((note, index) => (
-                <li key={index} className="listItem">
-                  <span>{note}</span>
-                  <button className="deleteBtn" onClick={() => deleteNote(index)}>Delete</button>
-                </li>
-              ))}
-            </ul>
-          )}
+   <NotesList notes={notes} deleteNote={deleteNote} />
         </section>
       </main>
     </div>
