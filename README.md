@@ -62,7 +62,7 @@ https://notes-react-sigma.vercel.app/
 - Linked live demo and GitHub repo in portfolio site
 
 ### Live Demo
-https://notes-react-vercel.vercel.app/
+https://notes-react-sigma.vercel.app/
 
 ## Day 17
 - Split Notes list into a reusable component
