@@ -1,7 +1,7 @@
 import './App.css';
 import {useState, useEffect, useRef} from 'react'
 import NotesList from './components/NotesList';
-
+import Header from './components/header';
 
 export default function App() {
   const [noteInput, setNoteinput] = useState("")
@@ -49,10 +49,7 @@ useEffect(() => {
 
   return (
     <div className="container">
-      <header className="header">
-        <h1>React Notes</h1>
-        <p className="count">Total: {notes.length}</p>
-      </header>
+      <Header />
       <main className="main">
         <section className="card">  
           <h2>Notes</h2>
