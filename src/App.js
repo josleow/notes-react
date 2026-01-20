@@ -61,7 +61,7 @@ useEffect(() => {
               <button className="clearBtn" onClick={()=>{if(window.confirm("Clear all notes?")) setNotes([])}}>Clear All</button>
             )}<br/>
             <input className="input" value={noteInput} onChange={(e)=> setNoteinput(e.target.value)} onKeyDown={handleKeyDown} placeholder="Type a note and press Enter"/>
-            <button className="button" onClick={addNote}>Add Note</button>
+            <button className="button" onClick={addNote} disabled={!noteInput.trim()}>Add Note</button>
           </div>
 
          <NotesList notes={notes} deleteNote={deleteNote} />

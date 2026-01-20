@@ -8,6 +8,7 @@
 | Day 16 | Deployment | Deployed live app to Vercel and linked in portfolio |
 | Day 17 | Components & Props | Split NotesList into reusable component and passed props |
 | Day 18 | Reusable Components | Added NoteItem component, notes count, and Clear All feature |
+| Day 19 | UI & UX Polish | Improved styling, mobile responsiveness, and disabled Add button when empty |
 
 ### 🚀 Live Demo
 https://notes-react-vercel.vercel.app/
@@ -46,3 +47,8 @@ https://notes-react-vercel.vercel.app/
 - Created NoteItem component for reusable note rendering
 - Practice props by passing data and handlers through components
 - Added notes count and Clear All Functionality
+
+## Day 19
+- Polished UI with cleaner spacing, card styling, and better list layout
+- Improved mobile responsiveness with media queries
+- Disabled Add button when input is empty for better UX
