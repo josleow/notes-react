@@ -6,6 +6,8 @@
 | Day 14 | React State & Events | Built Notes App with add / delete functionality |
 | Day 15 | React LocalStorage | Added data persistence with useEffect + useRef |
 | Day 16 | Deployment | Deployed live app to Vercel and linked in portfolio |
+| Day 17 | Components & Props | Split NotesList into reusable component and passed props |
+| Day 18 | Reusable Components | Added NoteItem component, notes count, and Clear All feature |
 
 ### 🚀 Live Demo
 https://notes-react-vercel.vercel.app/
