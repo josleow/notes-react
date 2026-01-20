@@ -35,6 +35,7 @@ https://notes-react-sigma.vercel.app/
 | Day 18 | Reusable Components | Added NoteItem component, notes count, and Clear All feature |
 | Day 19 | UI & UX Polish | Improved styling, mobile responsiveness, and disabled Add button when empty |
 | Day 20 | Documentation & Refactor | Added project overview, screenshot, tech stack, and refactored Header component |
+| Day 21 | Dark Mode Feature | Implemented light/dark theme toggle with LocalStorage persistence |
 
 ### 🚀 Live Demo
 https://notes-react-sigma.vercel.app/
@@ -83,3 +84,8 @@ https://notes-react-sigma.vercel.app/
 - Added full project overview and tech stack to README
 - Included live demo link and screenshot
 - Refactored header into reusable component
+
+## Day 21
+- Added Light/Dark mode toggle using React state
+- Implemented theme persistence with LocalStorage
+- Styled app using CSS variables for clean theming

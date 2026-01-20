@@ -7,7 +7,9 @@ export default function App() {
   const [noteInput, setNoteinput] = useState("")
   const [notes, setNotes] = useState([])
   const didMountRef = useRef(false);
-
+  const [theme, setTheme] = useState(()=>{
+    return localStorage.getItem("theme") || "light"
+  });
   // Load notes from localStorage on component mount
 useEffect(() => {
   try {
@@ -29,6 +31,14 @@ useEffect(() => {
   localStorage.setItem("notes", JSON.stringify(notes));
 }, [notes]);
 
+useEffect(()=>{
+    localStorage.setItem("theme", theme);
+    document.body.dataset.theme = theme;
+}, [theme])
+
+  function toggleTheme(){
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  }
 
   function addNote(){
     const text = noteInput.trim()
@@ -49,7 +59,8 @@ useEffect(() => {
 
   return (
     <div className="container">
-      <Header />
+      <Header theme={theme} onToggleTheme={toggleTheme} />
+
       <main className="main">
         <section className="card">  
           <h2>Notes</h2>
